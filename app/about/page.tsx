@@ -133,7 +133,7 @@ const handlenavigation=(path:string)=>{
 
       {/* Hero Section (FIRST SECTION - UNCHANGED) */}
        <motion.section
-       className="w-full py-1 px-4 md:px-8 lg:px-32 bg-white relative overflow-hidden"
+       className="w-full py-1 px-4 md:px-8  bg-white relative overflow-hidden"
        variants={sectionVariants}
        initial="hidden"
        animate="visible" // Animates immediately on mount
@@ -166,7 +166,7 @@ const handlenavigation=(path:string)=>{
                </span>
              </motion.h1>
              <motion.p
-               className="text-gray-600 text-sm md:text-base leading-relaxed"
+               className="text-gray-600 text-sm md:text-md lg:text-lg leading-relaxed"
                variants={textItemVariants} >
                Pioneering the future of AI-driven business solutions since 2018. We
                combine cutting-edge technology with deep industry expertise to
@@ -200,14 +200,14 @@ const handlenavigation=(path:string)=>{
           
           <motion.div className="w-full md:w-1/2"> 
             <motion.h2
-              className="text-xl sm:text-3xl lg:text-5xl kulim font-bold bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text mb-2 sm:mb-6 md:text-left"
+              className="text-xl sm:text-3xl md:text-4xl lg:text-6xl  font-bold bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text mb-2 sm:mb-6 md:text-left"
               variants={missionVisionItemVariants}>
               Our Mission & Vision
             </motion.h2>
             <motion.div
               className="mb-6 sm:mb-8 p-4 sm:p-6 bg-[#E3F4FF] hover:bg-[#afdfff] hover:translate-y-2 rounded-xl border-l-4 border-pink-500"
               variants={missionVisionItemVariants}  > 
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Mission</h3> 
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Mission</h3> 
               <p className="text-xs md:text-base lg:text-base text-gray-700 leading-relaxed"> 
                 To democratize artificial intelligence by creating accessible, powerful, and ethical AI solutions that solve real-world business challenges and drive meaningful transformation across industries.
               </p>
@@ -215,7 +215,7 @@ const handlenavigation=(path:string)=>{
             <motion.div
               className="p-4 sm:p-6 bg-[#E3F4FF] rounded-xl hover:bg-[#afdfff] hover:shadow-xl hover:translate-y-2  border-l-4 border-indigo-500"
               variants={missionVisionItemVariants} >
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Vision</h3> 
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3">Vision</h3> 
               <p className="text-xs md:text-base lg:text-lg text-gray-700 leading-relaxed"> 
                 To be the global leader in human-centered AI, building a future where advanced technology enhances human potential, creates sustainable business growth, and contributes positively to society.
               </p>

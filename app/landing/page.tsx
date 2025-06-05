@@ -239,59 +239,12 @@ export default function LandingPage() {
 
       {/* Left Sidebar for Contact Options */}
       {/* Left Sidebar for Contact Options */}
-      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
-        <div className="flex flex-col space-y-4">
-          {/* Book a Meeting */}
-          <div className="w-12 h-40 bg-purple-600 shadow-lg flex items-center justify-center relative">
-            <button
-              onClick={() => router.push('/appointment')}
-              className="transform -rotate-90 p-4 flex items-center space-x-2 text-white bg-purple-600 hover:bg-purple-800 hover:text-white hover:scale-110 transition-all duration-300 ease-in-out whitespace-nowrap cursor-pointer"
-              aria-label="Book a meeting"
-            >
-              <FaRegCalendar className="w-5 h-5" />
-              <span className="text-sm">Book a Meeting</span>
-            </button>
-
-
-
-          </div>
-
-          {/* Message Icon */}
-          <div className="w-12 h-12 shadow-lg rounded-r-md flex items-center justify-center bg-gradient-to-br from-[#A955F7] to-[#EB489A]">
-            <a
-              href="tel:+918750860676"
-              className="flex items-center justify-center text-white hover:scale-110 transition-all duration-300 ease-in-out"
-              aria-label="Call +91 87508 60676"
-            >
-              <img
-                src="/message-bubble.png"
-                alt="Message Icon"
-                className="w-8 h-8"
-              />
-            </a>
-          </div>
-
-          {/* WhatsApp Icon */}
-          <div className="w-12 h-12 shadow-lg flex items-center justify-center bg-white">
-            <a
-              href="https://wa.me/918750860676?text=Hello!%20how%20can%20I%20help%20you"
-              className="flex items-center justify-center text-gray-700 hover:text-purple-600 hover:bg-purple-50 hover:scale-110 transition-all duration-300 ease-in-out"
-              aria-label="Message on WhatsApp"
-            >
-              <img
-                src="/whatsapp.png"
-                alt="WhatsApp Icon"
-                className="w-8 h-8"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Right Sidebar for Chat with Us */}
       <div className="fixed right-0 bottom-0 transform -translate-y-1/2 z-50">
         <button
-          onClick={() => window.$chatwoot?.toggle()}
+          
           className="flex items-center space-x-2 text-white bg-purple-600 hover:bg-purple-800 transition-colors rounded-full px-4 py-2"
         >
           <MessageCircle className="w-5 h-5" />
