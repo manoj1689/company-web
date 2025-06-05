@@ -1,0 +1,293 @@
+
+
+
+
+
+@media (min-width: 992px) {
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.common-heading {
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+h2 {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+@media (min-width: 992px) {
+    .mb-lg-4 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+.common-heading h2 {
+    margin-bottom: 30px;
+    color: #0000ab;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.d-none {
+    display: none !important;
+}
+
+p:last-child {
+    margin: 0;
+}
+
+ul {
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.hexgrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: sans-serif;
+    list-style-type: none;
+    transform-origin: center top;
+}
+
+@media (min-width: 1201px) {
+    .hexgrid {
+        padding-bottom: 6%;
+    }
+}
+
+.ps-0 {
+    padding-left: 0 !important;
+}
+
+.hex {
+    position: relative;
+    width: 16.6%;
+    outline: 1px solid transparent;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hex.animate-slide-up {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+@media (min-width: 1201px) {
+    .hex {
+        width: 16.6%;
+    }
+}
+
+.hex:after {
+    content: "";
+    display: block;
+    padding-bottom: 86.602%;
+}
+
+.hex:nth-child(11n + 7) {
+    margin-left: 8.2%;
+}
+
+.hexIn {
+    position: absolute;
+    width: 91%;
+    padding-bottom: 103.851%;
+    margin: 2%;
+    overflow: hidden;
+    outline: 1px solid transparent;
+    transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+}
+
+.hexIn * {
+    position: absolute;
+    visibility: visible;
+    outline: 1px solid transparent;
+}
+
+.hexLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+    transition: all 1.2s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.hexLink:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
+
+.hex .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hexLink:hover .img {
+    transform: scale(0.9);
+}
+
+#style-zciFB {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/node-js.png);
+}
+
+#style-jCWHW {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/selenium.png);
+}
+
+#style-7LCTi {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/react-js.png);
+}
+
+#style-4Bs7U {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/laravel.png);
+}
+
+#style-oWffW {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/pwa.png);
+}
+
+#style-zGeDs {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/kotlin.png);
+}
+
+#style-N4G2Q {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/flutter.png);
+}
+
+#style-J7r5l {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/yii.png);
+}
+
+#style-UmCoM {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/php.png);
+}
+
+#style-zOHr4 {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/django.png);
+}
+
+#style-Q3nk3 {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/angular-js.png);
+}
+
+#style-8xirp {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/react-native.png);
+}
+
+#style-JtxpW {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/swift.png);
+}
+
+#style-yrmCr {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/spring-boot.png);
+}
+
+#style-foTA4 {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/python.png);
+}
+
+#style-5p1Jp {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/tensor-flow.png);
+}
+
+#style-j9mpS {
+    background-image: url(https://toxsl.com/themes/new/img/technology-icon/open-cv.png);
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hexgrid {
+        transform: scale(0.8);
+        padding-bottom: 4%;
+        width: 125%;
+        margin-left: -12.5%;
+    }
+
+    .hex {
+        width: 16.6%;
+        visibility: visible;
+    }
+
+    .hex:nth-child(11n + 7) {
+        margin-left: 8.2%;
+    }
+
+    .common-heading h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hexgrid {
+        transform: scale(0.5);
+        padding-bottom: 2%;
+        width: 200%;
+        margin-left: -50%;
+    }
+
+    .hex {
+        width: 16.6%;
+        visibility: visible;
+    }
+
+    .hex:nth-child(11n + 7) {
+        margin-left: 8.2%;
+    }
+
+    .common-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .pad-tb {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
