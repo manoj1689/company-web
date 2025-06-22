@@ -1,0 +1,138 @@
+.mains {
+  display: flex;
+  --s: 200px; /* Default size for desktop */
+  --m: 4px; /* Default margin */
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+}
+
+.containers {
+  font-size: 0; /* Disable white space between inline block elements */
+  width: 100%;
+}
+
+.honeycomb .cell {
+  width: var(--s);
+  height: calc(var(--s) * 1.1547);
+  margin: var(--m);
+  display: inline-block;
+  position: relative;
+  font-size: initial;
+  margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+  transform: scale(0.95); /* Default shrink for all cells */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.honeycomb .cell:hover {
+  transform: scale(0.90); /* Further shrink on hover */
+}
+
+.honeycomb .cell .content {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Image backgrounds for each cell */
+.honeycomb .cell .content.cell-1 {
+  background-image: url("/languages/node-js.png");
+}
+.honeycomb .cell .content.cell-2 {
+  background-image: url("/languages/selenium.png");
+}
+.honeycomb .cell .content.cell-3 {
+  background-image: url("/languages/react-js.png");
+}
+.honeycomb .cell .content.cell-4 {
+  background-image: url("/languages/kotlin.png");
+}
+.honeycomb .cell .content.cell-5 {
+  background-image: url("/languages/laravel.png");
+}
+.honeycomb .cell .content.cell-6 {
+  background-image: url("/languages/pwa.png");
+}
+.honeycomb .cell .content.cell-7 {
+  background-image: url("/languages/flutter.png");
+}
+.honeycomb .cell .content.cell-8 {
+  background-image: url("/languages/yii.png");
+}
+.honeycomb .cell .content.cell-9 {
+  background-image: url("/languages/php.png");
+}
+.honeycomb .cell .content.cell-10 {
+  background-image: url("/languages/django.png");
+}
+.honeycomb .cell .content.cell-11 {
+  background-image: url("/languages/angular-js.png");
+}
+.honeycomb .cell .content.cell-12 {
+  background-image: url("/languages/react-native.png");
+}
+.honeycomb .cell .content.cell-13 {
+  background-image: url("/languages/swift.png");
+}
+.honeycomb .cell .content.cell-14 {
+  background-image: url("/languages/spring-boot.png");
+}
+.honeycomb .cell .content.cell-15 {
+  background-image: url("/languages/python.png");
+}
+.honeycomb .cell .content.cell-16 {
+  background-image: url("/languages/tensor-flow.png");
+}
+.honeycomb .cell .content.cell-17 {
+  background-image: url("/languages/open-cv.png");
+}
+
+.containers::before {
+  content: "";
+  width: calc(var(--s) / 2 + var(--m));
+  float: left;
+  height: 120%;
+  shape-outside: repeating-linear-gradient(
+    #0000 0 calc(var(--f) - 3px),
+    #000 0 var(--f)
+  );
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .mains {
+    --s: 100px; /* Reduce cell size for mobile */
+    --m: 2px; /* Reduce margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+  }
+  .containers {
+    padding: 0 5px; /* Add padding for mobile */
+  }
+  .honeycomb .cell {
+    margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+    transform: scale(0.90); /* Smaller default scale */
+  }
+  .honeycomb .cell:hover {
+    transform: scale(0.85); /* Adjust hover scale */
+  }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .mains {
+    --s: 80px; /* Smallest cell size */
+    --m: 1px; /* Minimal margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+  }
+  .containers {
+    padding: 0 3px;
+  }
+  .honeycomb .cell {
+    margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+    transform: scale(0.88); /* Smallest default scale */
+  }
+  .honeycomb .cell:hover {
+    transform: scale(0.82); /* Adjust hover scale */
+  }
+}
