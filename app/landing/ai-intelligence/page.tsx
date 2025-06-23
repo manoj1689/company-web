@@ -366,7 +366,7 @@ export default function MobileAutomationAI() {
                 variants={textItemVariants}
                 className="text-gray-700 text-sm md:text-md lg:text-lg mt-4"
               >
-                AI also plays a  pivotal role in customer service, with chatbots and virtual assistants providing 24/7 support, reducing wait times, and enhancing user satisfaction. Natural language processing and sentiment analysis allow businesses to better understand customer feedback and sentiment, enabling targeted marketing and improved product development.
+                AI also plays a  pivotal role  customer service, with chatbots and virtual assistants providing 24/7 support, reducing wait times, and enhancing user satisfaction. Natural language processing and sentiment analysis allow businesses to better understand customer feedback and sentiment, enabling targeted marketing and improved product development.
               </motion.p>
             </div>
 
