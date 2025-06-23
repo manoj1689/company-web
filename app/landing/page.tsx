@@ -56,17 +56,7 @@ export default function LandingPage() {
 
          <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
           <div className="flex flex-col space-y-4">
-            {/* Book a Meeting */}
-            {/* <div className="rounded-r-md w-12 h-16 md:h-40 bg-blue-500 shadow-lg flex items-center justify-center relative floating-sidebar hover:bg-blue-500 ">
-              <button
-                onClick={() => router.push("/appointment")}
-                className="transform -rotate-90 px-2 py-3 flex items-center space-x-2 text-white  hover:rounded-r-md hover:scale-110 transition-all duration-300 ease-in-out whitespace-nowrap cursor-pointer"
-                aria-label="Book a meeting"
-              >
-                <FaRegCalendar className="w-5 h-5 " />
-                <span className="hidden md:inline text-sm">Book a Meeting</span>
-              </button>
-            </div> */}
+        
 
             {/* Message Icon */}
             <div className="w-12 h-12 shadow-lg rounded-r-md flex items-center justify-center bg-gradient-to-br from-[#A955F7] to-[#EB489A] floating-sidebar">
