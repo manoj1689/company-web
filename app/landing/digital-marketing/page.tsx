@@ -161,7 +161,7 @@ export default function MobileAutomationAI() {
             <motion.div
               variants={textContainerVariants}
               className=" flex flex-col lg:flex-row justify-between items-center py-10 md:py-12 gap-4 ">
-              <div className="lg:w-1/2 text-center lg:text-left ">
+              <div className="lg:w-1/2 text-left ">
                 <motion.h2
                   variants={textItemVariants}
                   className="ext-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
